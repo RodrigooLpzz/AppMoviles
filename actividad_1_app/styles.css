@@ -1,12 +1,11 @@
 .main-layout{
     display: flex;
     gap: 10px;
-    margin: 30px;
+    margin: 9%;
 }
 
 .main-image{
     width: 50%;
-    height: 100p;
 }
 
 .photo{
@@ -35,7 +34,7 @@ input{
 }
 
 h1{
-    font-size: 60px;
+    font-size: 5rem;
 }
 
 
@@ -59,4 +58,29 @@ li{
 
 .logo{
     height: 45px;
+}
+
+@media only screen and (max-width: 768px)
+{
+
+    /* *{
+         border: red solid; 
+    } */
+
+    .main-layout{
+        flex-direction:column;
+    }
+
+    .main-image, .secondary-images{
+        width: 100%;
+    }
+
+    .left-bar{
+        flex-wrap: wrap;
+    }
+
+    .bar{
+        flex-direction: column;
+    }
+
 }
